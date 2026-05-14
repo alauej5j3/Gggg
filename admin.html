@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>單字管理頁面</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page admin-page">
+    <header>
+      <h1>單字管理</h1>
+      <a class="admin-link" href="index.html">回到學習頁面</a>
+    </header>
+
+    <section class="admin-form">
+      <h2>新增單字</h2>
+      <form id="wordForm">
+        <label>英文單字<input id="inputWord" type="text" required maxlength="50" /></label>
+        <label>中文解釋<textarea id="inputMeaning" required rows="2"></textarea></label>
+        <label>詞性<input id="inputPos" type="text" required maxlength="30" /></label>
+        <label>例句<textarea id="inputExample" required rows="2"></textarea></label>
+        <label>字根分析<textarea id="inputRoot" required rows="2"></textarea></label>
+        <button type="submit">儲存單字</button>
+      </form>
+
+      <div class="admin-list">
+        <h2>現有單字</h2>
+        <ul id="wordList"></ul>
+      </div>
+    </section>
+  </main>
+  <script src="admin.js"></script>
+</body>
+</html>
